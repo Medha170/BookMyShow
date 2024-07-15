@@ -1,2 +1,55 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
 .env
-/node_modules/
+
+# Build output
+build/
+dist/
+
+# Dependency directories
+bower_components/
+jspm_packages/
+
+# Coverage directory used by testing tools
+coverage/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Miscellaneous
+*.lock
+*.lock-wscript
+
+
+# Next.js
+.next/
+
+# Nuxt.js
+.nuxt/
+
+# Gatsby
+.cache/
+public/
+
+# Hugo
+/public/
+
+# Storybook
+.out/
