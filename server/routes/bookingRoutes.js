@@ -15,7 +15,7 @@ const razorpay = new Razorpay({
 
 // Webhook endpoint for Razorpay
 router.post('/webhook', express.raw({ type: 'application/json' }), (req, res) => {
-  const secret = 'YOUR_RAZORPAY_WEBHOOK_SECRET';
+  const secret = process.env.RAZORPAY_WEBHOOK_SECRET;
 
   const shasum = crypto.createHmac('sha256', secret);
   shasum.update(JSON.stringify(req.body));
