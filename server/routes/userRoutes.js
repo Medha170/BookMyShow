@@ -6,6 +6,8 @@ const authmiddleware = require('../middlewares/authmiddleware');
 const EmailHelper = require('../utils/emailSender');
 
 const router = express.Router();
+require('dotenv').config();
+
 
 // Function for otp generation
 const otpGenerator = function () {
